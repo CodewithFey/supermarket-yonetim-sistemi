@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Süpermarket Yönetim Sistemi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="logo">
+    <div class="logo-mark">S</div>
+    <div>
+      <div class="logo-title">Süpermarket</div>
+      <div class="logo-sub">Yönetim Sistemi</div>
+    </div>
+  </div>
+  <nav>
+    <a class="nav-item active" data-page="dashboard">
+      <span class="nav-icon">&#9632;</span> Dashboard
+    </a>
+    <a class="nav-item" data-page="satislar">
+      <span class="nav-icon">&#9632;</span> Satışlar
+    </a>
+    <a class="nav-item" data-page="urunler">
+      <span class="nav-icon">&#9632;</span> Ürünler
+    </a>
+    <a class="nav-item" data-page="stok">
+      <span class="nav-icon">&#9632;</span> Stok Durumu
+    </a>
+    <a class="nav-item" data-page="musteriler">
+      <span class="nav-icon">&#9632;</span> Müşteriler
+    </a>
+    <a class="nav-item" data-page="personel">
+      <span class="nav-icon">&#9632;</span> Personel
+    </a>
+    <a class="nav-item" data-page="raporlar">
+      <span class="nav-icon">&#9632;</span> Raporlar
+    </a>
+  </nav>
+</aside>
+
+<main class="main">
+  <header class="topbar">
+    <div class="topbar-title" id="pageTitle">Dashboard</div>
+  </header>
+
+  <div class="content" id="content">
+    <div class="loading">Yükleniyor...</div>
+  </div>
+</main>
+
+<div class="modal-overlay" id="modalOverlay" style="display:none">
+  <div class="modal">
+    <div class="modal-header">
+      <span id="modalTitle">Detay</span>
+      <button class="modal-close" onclick="closeModal()">Kapat</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
